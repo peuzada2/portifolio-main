@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       <nav id="nav">
+        <div class="logo">
+            <img src="imagens/robo2.png" alt="" class="logoimg">
+        </div>
+        <div id="navlist">
+            <button id="menu" aria-expanded="true" aria-controls="navbar" aria-haspopup="true" aria-label="Abrir Menu-">MENU<span id="hamburguer"></span></button>
+            <ul id="navbar" role="menu">
+            <li class="nav-item"> <a href="#">Inicio</a></li>
+                <li class="nav-item"> <a href="#content">Projeto</a></li>
+                <li class="nav-item"> <a href="#sobremimc">Sobre mim</a></li>
+                <li class="nav-item"> <a href="#footer">Contato</a></li>
+            </ul>
+        </div>
+       </nav>
+    </header>
+    <main id="home">
+            <span class="ap">
+                <div class="apresentacao">
+                    <p class="nome">Olá, Meu nome é</p>
+                    <h1>Pedro Daniel</h1>
+                    <p class="oqfaco">sou um web Developer e esse é meu portifolio</p>
+                    <div class="social-media-hub">
+                        <img src="imagens/whatsapp (2).png" alt="" class="logos">
+                        <img src="imagens/youtube.png" alt="" class="logos">
+                        <a href="https://github.com/peuzada" target="_blank">
+                            <img src="imagens/github.png" alt="" class="logos">
+                        </a>
+                    </div>
+                </div>
+                <img src="imagens/peu.png" alt="" id="imgb"/>
+            </span>
+    </main>
+
+    <div id="content">
+        <div class="backgroundc"></div>
+        <div class="tap">
+            <h1 class="titulop">MEUS PROJETOS</h1>
+        </div>
+        <div id="cards">
+            <div class="card1">
+                <div class="imgs1"> <a href="index2.html" target="_blank" class="txtimg1">PRIMEIRO SITE</a></div>
+                   <div class="content1">
+                      <p class="desc">
+                        Meu primeiro site completo feito Pelo Curso:"CursoEmVideo", com o uso de html e css, foi um dos projetos implementados no curso, tenho um afeto muito grande por esse projeto, porque foi dele onde tudo de fato começou.<a href="index2.html" target="_blank" class="link1">link para o site </a>
+                      </p>
+                   </div>
+                   <p class="arrow"> &uarr; </p>
+            </div>
+            <div class="card1">
+                <div class="imgs2"><a href="https://peuzada2.github.io/tela-login-responsiva/" target="_blank" class="txtimg1">TELA DE LOGIN</a></div>
+                    <div class="content1">
+                      <p class="desc">Projeto Criado com o intuito de estudar os conceitos de uma tela de login responsiva e atraente, esse projeto demorou cerca de dois dias para ser concluido, Ferramentas utilizadas: Html e css.<a href="https://peuzada.github.io/tela-Login-1/" target="_blank" class="link1">link para o site </a>
+                      </p>
+                    </div>
+                    <p class="arrow"> &uarr; </p>
+            </div>
+            <div class="card1">
+                <div class="imgs3">
+                    <h2 class="txtimg1">EM CONSTRUÇÃO</h2>
+                </div>
+                <div class="content1">
+                    <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos rem eligendi tempora quae temporibus velit expedita accusantium illo repellendus fugit totam eum, autem nihil nostrum sunt id dolor in inventore!<a href="https://www.youtube.com/" class="link1">link para o site </a> </p>
+                  </div>
+                  <p class="arrow"> &uarr; </p>
+            </div>
+        </div>
+</div>
+
+<div id="sobremimc">
+        <div class="conteudosobremim">
+               <span class="info">
+                   <h1 class="tituloc">MAIS SOBRE MIM</h1>
+                        <p class="infotext">
+                            Olá, me chamo Pedro Daniel, tenho 17 anos e eu
+                            entrei nesse ramo de designer  a pouco mais
+                            de um ano, pois sempre me interessei em fazer Posts  ou artes digitais de minha maneira, Já fiz
+                            alguns trabalhos para lojas locais  e gostei da experiência estou a procura de novas oportunidades e
+                            expêriencia, se estiver interessado entre em contato ;)
+                        </p>
+                        <h2>HABILIDADES</h2>
+                        <img src="imagens/html.png" alt="" class="iconsc">
+                        <img src="imagens/css-3(1).png" alt=""  class="iconsc">
+                        <img src="imagens/script-java.png" alt="" class="iconsc">
+                        <img src="imagens/photoshop.png" alt="" class="iconsc">
+                        <img src="imagens/adobe-illustrator.png" alt="" class="iconsc">
+               </span>
+            </div>
+            <div class="iconperfil"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+<footer id="footer">
+    <div id="rodape">
+        <h1>SE INTERESSOU?</h1>
+        <h2>envie um email</h2>
+
+        <form action="|">
+            <fieldset>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                    <div class="campo">
+                        <label for="sobrenome">SobreNome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label>Mensagem</label>
+                        <textarea name="textarea" id="Mensagem" cols="30" rows="10" required>
+                        </textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</footer>
+</html>
