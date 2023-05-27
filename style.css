@@ -68,7 +68,7 @@ a:hover {
     padding-right: 30px;
 }
 
-.nav-item {
+.nav-item, .nav-item2, .nav-item3, .nav-item4 {
     margin: 10px;
     text-decoration: none;
     overflow: hidden;
@@ -313,6 +313,7 @@ a:hover {
     font-style: normal;
     font-weight: bolder;
     text-decoration-line: underline;
+    padding-top: 3px;
 }
 
 #sobremimc {
@@ -502,10 +503,7 @@ fieldset {
 
 @media only screen and (min-width: 701px ) and (max-width: 901px) {
 
-    footer {
-        display: none;
-    }
-
+    
     .iconperfil {
         width: 240px;
         height: 240px;
@@ -515,25 +513,7 @@ fieldset {
     .card1:active .arrow {
         transform: rotate(0);
     }
-    
-    .card1:active .content1{
-        transform: translateX(0);
-        height: 120px;
-    }
-    
-    
-    .card1:active .imgs1{
-        opacity: .9;
-    }
-    
-    .card1:active .imgs2{
-        opacity: .9;
-    }
-    
-    .card1:active .imgs3{
-        opacity: .9;
-    }
-    
+
     
     .ap {
         display: flex;
@@ -565,6 +545,14 @@ fieldset {
         width: 100%;
     }
     
+    footer {
+        display: none;
+    }
+
+    .nav-item4{
+        display: none;
+    }
+
     .conteudosobremim {
         flex-wrap: wrap;
         width: 100%;
@@ -726,7 +714,7 @@ header {
     top: -7px;
 }
 
-.nav-item {
+.nav-item, .nav-item2, .nav-item3, .nav-item4 {
     font-size: 40px;
     padding: 2.5rem 0;
     margin: 0 1rem;
