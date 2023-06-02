@@ -490,7 +490,7 @@ fieldset {
     #cards {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
     }
     .card1 {
         margin-bottom: 30px;
