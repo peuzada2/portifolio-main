@@ -24,6 +24,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -125,15 +126,19 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 140px;
+    height: 60vh;
+    margin-bottom: 50px;
 }
 
 
 #imgb {
-    visibility: hidden;
-    width: 300px;
-    padding-right: 50px;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    background-image: url(imagens/peu.png);
     -webkit-filter: drop-shadow(3px 5px 20px rgba(0, 0, 0, 0.356));
     animation-name: imgb;
     animation-duration: 2s;
@@ -166,8 +171,7 @@ a:hover {
 }
 
 #content {
-    margin-top: 140px;
-    margin-bottom: 180px;
+
 }
 
 .backgroundc {
@@ -178,7 +182,7 @@ a:hover {
     color: #462980;
     font-size: 60px;
     border-bottom: 3px solid #23144083;
-    
+    margin-top: 50px;
 }
 
 .tap {
@@ -199,12 +203,12 @@ a:hover {
 
 .card1 {
     background-image: linear-gradient(90deg, rgb(51, 51, 51), rgb(32, 32, 32));
+    width: 30%;
     overflow: hidden;
     border-radius: 10px;
-    max-width: 400px;
     cursor: pointer;
     transition: 0.6s;
-    position: relative;
+    z-index: 1;
 }
 
 .content1 {
@@ -266,7 +270,7 @@ a:hover {
     align-items: center;
     background-size: cover;
     background-position: center;
-    width: 400px;
+    width: 100%;
     height: 250px;
     border-radius: 10px;
     border-bottom-left-radius: 0px;
@@ -281,19 +285,19 @@ a:hover {
     align-items: center;
     background-size: cover;
     background-position: center;
-    width: 400px;
+    width: 100%;
     height: 250px;
     border-radius: 10px;box-shadow: 5px 3px 7px #8686867c;
 }
 
 .imgs3 {
-    background-image: url('imagens/imgs2.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagens/Screenshot_28.png');
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
-    width: 400px;
+    width: 100%;
     height: 250px;
     border-radius: 10px;box-shadow: 5px 3px 7px #8686867c;
 }
@@ -391,7 +395,7 @@ a:hover {
 }
 
 .iconsc:hover {
-    scale: 1.3;
+    transform:scale(1.1);
 }
 
 footer {
@@ -491,6 +495,7 @@ fieldset {
         display: flex;
         align-items: center;
         flex-direction: row;
+        width: 100%;
     }
     .card1 {
         margin-bottom: 30px;
@@ -513,19 +518,6 @@ fieldset {
     .card1:active .arrow {
         transform: rotate(0);
     }
-
-    
-    .ap {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 70px;
-    }
-    
-    #imgb {
-        width: 270px;
-    }
     
     .apresentacao {
         font-size: 40px;
@@ -534,15 +526,25 @@ fieldset {
 }
 
 @media only screen and (min-width: 100px ) and (max-width: 701px) {
+
+    .nome {
+        font-size: .8em;
+    }
+
+    .oqfaco {
+        font-size: .8em;
+    }
     
     #sobremimc {
         flex-direction: column-reverse;
-        justify-content: flex-start;
+        justify-content: center;
         background-size: cover;
-        align-items: flex-start;
-        padding-bottom: 200px;
-        padding-top: 30px;
+        align-items: center;
+        background-size: cover;
+        height: 95vh;
         width: 100%;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     
     footer {
@@ -570,8 +572,9 @@ fieldset {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         margin: 0;
-        margin-top: 120px;
+        margin-top: 70px;
         padding: 0;
     }
 
@@ -584,13 +587,19 @@ fieldset {
         padding: 0;
     }
 
+    #imgb {
+        width: 90%;
+        height: 350px;
+    }
+
     .imgs1 {
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
     }
 
     .txtimg1 {
-        font-size: 30px;
+        font-size: 1.3em;
+        text-align: center;
     }
 
     .card1 {
@@ -598,16 +607,19 @@ fieldset {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        width: 80%;
         margin-bottom: 30px;
     }
     
     .tap {
         width: 90%;
+        padding-bottom: 20px;
     }
 
     .titulop {
         text-align: center;
+        font-size: 1.9em;
+        margin: 0;
     }
 
     .tituloc {
@@ -620,26 +632,35 @@ fieldset {
         width: 90%;
     }
 
-    .card1:hover .content1{
-        transform: translateX(0);
-        height: 135px;
+    .desc {
+        font-size: 16px;
     }
 
-    .ap {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 70px;
-}
+    .content1 {
+        transition: 0.6s all ease-in-out;
+    }
+
+    .card1:hover .content1{
+        transform: translateX(0);
+        height: 90%;
+    }
+
+    .card1:hover #content2{
+        transform: translateX(0);
+        height: 90%;
+    }
+
 
 .apresentacao {
     margin-right: 20px;
     font-size: 30px;
 }
 
-#imgb {
-    display: none;
+.ap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -662,6 +683,23 @@ header {
     overflow-y: hidden;
     height: 0px;
     transition: .4s;
+}
+
+.iconperfil {
+    display: none;
+}
+
+.tituloc {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.titulop {
+    width: 80%;
+}
+
+.infotext {
+    font-size: .9em;
 }
 
 #menu {
