@@ -180,7 +180,6 @@ a:hover {
 .titulop {
     color: #462980;
     font-size: 60px;
-    border-bottom: 3px solid #23144083;
     margin-top: 50px;
 }
 
@@ -264,7 +263,7 @@ a:hover {
 }
 
 .imgs1 {
-    background-image: url('imagens/imgs1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagens/Screenshot_54.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,6 +304,7 @@ a:hover {
 .txtimg1 {
     font-weight: bolder;
     font-style: italic;
+    text-align: center;
     font-size: 40px;
     color: #a577ff;
     text-shadow: 2px 2px 2px #000000be;
@@ -508,6 +508,10 @@ fieldset {
 
 @media only screen and (min-width: 701px ) and (max-width: 901px) {
 
+    #home {
+        margin-top: 150px;
+    }
+
     
     .iconperfil {
         width: 240px;
@@ -526,6 +530,10 @@ fieldset {
 }
 
 @media only screen and (min-width: 100px ) and (max-width: 701px) {
+
+    #home {
+        margin-top: 100px;
+    }
 
     .nome {
         font-size: .8em;
